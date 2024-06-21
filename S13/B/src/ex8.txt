@@ -1,0 +1,28 @@
+class Solution {
+    public int solution(String s) {
+        int answer = 0;
+        String[] strArr = s.split("");
+        if(strArr[0].equals("+")){
+            String answerStr = "";
+            for(int i=1;i< strArr.length;i++) {
+                answerStr += strArr[i];
+            }
+            answer=Integer.parseInt(answerStr);
+        }
+        else if(strArr[0].equals("-")){
+            String answerStr = "";
+            for(int i=0;i< strArr.length;i++) {
+                answerStr += strArr[i];
+            }
+            answer=Integer.parseInt(answerStr);
+        }
+        else{
+            String answerStr = "";
+            for(int i=0;i< strArr.length;i++) {
+                answerStr += strArr[i];
+            }
+            answer=Integer.parseInt(answerStr);
+        }
+        return answer;
+    }
+}

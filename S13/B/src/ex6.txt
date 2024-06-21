@@ -1,0 +1,10 @@
+import java.util.*;
+class Solution {
+    public List<Long> solution(long x, int n) {
+        List<Long> answer = new ArrayList<>();
+        for(int i=1;i<=n;i++){
+            answer.add(x*i);
+        }
+        return answer;
+    }
+}
